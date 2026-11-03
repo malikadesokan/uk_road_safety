@@ -27,4 +27,4 @@ This repository will evolve as the project progresses. Further documentations wi
 
 ### Collaboators
 - Abdulmalik Adesokan - Data Engineer
-- Chiegbu Henry - BI Developer
+- Henry Chiegbu - BI Developer
