@@ -1,6 +1,4 @@
 import pandas as pd
-from pathlib import Path
-from datetime import datetime
 import config
 
 # Extract Collisions Data and Save as CSV File
