@@ -11,6 +11,8 @@ DB_NAME = os.getenv('DB_NAME')
 
 DATA_PATH = "./data/raw/"
 
+LOOKUP_PATH = "./data/lookups/"
+
 COLLISION = "https://data.dft.gov.uk/road-accidents-safety-data/dft-road-casualty-statistics-collision-last-5-years.csv" # noqa E501
 
 VEHICLES = "https://data.dft.gov.uk/road-accidents-safety-data/dft-road-casualty-statistics-vehicle-last-5-years.csv" # noqa E501

@@ -2,4 +2,12 @@
 .venv/
 __pycache__/
 data/
+/terraform/*.hcl
+/terraform/*.tfstate
+/terraform/.terraform
+python_scripts/test.py
+python_scripts/*_def.py
+python_scripts/test.ipynb
+python_scripts/collision_dicts.py
+python_scripts/clean_dict.py
 

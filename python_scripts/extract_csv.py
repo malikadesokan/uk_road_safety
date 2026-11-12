@@ -3,9 +3,9 @@ from pathlib import Path
 from datetime import datetime
 import config
 
-
+# Extract Collisions Data and Save as CSV File
 def extract_collision_data():
-        print("Exctracting collision data")
+        print("Extracting collision data")
         df = pd.read_csv(config.COLLISION, dtype={
                 "collision_index" : "string",
                 "collision_ref_no" : "string"
@@ -17,9 +17,9 @@ def extract_collision_data():
 if __name__ == "__main__":
         extract_collision_data()
 
-
+# Extract Vehicles Data and Save as CSV File
 def extract_vehicles_data():
-        print("Exctracting vehicles data")
+        print("Extracting vehicles data")
         df = pd.read_csv(config.VEHICLES, dtype={
                 "generic_make_model" : "string"
         })
@@ -30,9 +30,9 @@ def extract_vehicles_data():
 if __name__ == "__main__":
         extract_vehicles_data()
 
-
+# Extract Casualties Data and Save as CSV File
 def extract_casualties_data():
-        print("Exctracting casualties data")
+        print("Extracting casualties data")
         df = pd.read_csv(config.CAUSALTIES)
         df.to_csv(f"{config.DATA_PATH}/casulties_data.csv", index=False)
         df_count = len(df)
