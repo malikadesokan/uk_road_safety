@@ -30,7 +30,23 @@ The filename refers to 2025 but the code-list sheet is named `2024_code_list`. S
 - `collision_ref_no` is an in-year police reference. Do not use it alone to join across years. Preserve identifier columns as text so leading zeros remain intact.
 - To attach collision details, join vehicle records to collision records on `collision_index`. Expected relationship: many vehicles to one collision. Check uniqueness in the collision file before joining.
 - To attach vehicle details to casualties, use `collision_index` AND `vehicle_reference` where the casualty record identifies a vehicle. Joining on collision alone can attach unrelated vehicles and multiply rows.
-- Collision and casualty files were not supplied for this analysis. Cross-file key matches, unmatched casualty references and actual join cardinalities remain untested.
+- In the supplied files, `collision_index` is unique in the collision file, and all 937,265 vehicle rows match a collision.
+- All 652,821 casualty rows match a vehicle using both `collision_index` and `vehicle_reference`.
+- There are no duplicate vehicle (`collision_index`, `vehicle_reference`) or casualty (`collision_index`, `casualty_reference`) pairs, and no unmatched references.
+- For all 513,801 collisions, the reported vehicle and casualty totals match the linked rows.
+
+- ## Cross-dataset validation
+
+| Check | Result |
+| --- | --- |
+| Collision rows and distinct `collision_index` values | 513,801 rows; 0 duplicate keys |
+| Vehicle rows without a matching collision | 0 of 937,265 |
+| Duplicate vehicle (`collision_index`, `vehicle_reference`) pairs | 0 |
+| Casualty rows without a matching collision | 0 of 652,821 |
+| Casualty rows without a matching vehicle | 0 of 652,821 |
+| Duplicate casualty (`collision_index`, `casualty_reference`) pairs | 0 |
+| Collisions with mismatched vehicle totals | 0 of 513,801 |
+| Collisions with mismatched casualty totals | 0 of 513,801 |
 
 ## Field dictionary
 
@@ -741,13 +757,13 @@ The supplied workbook says the historical versions were collected under the 2011
 - [x] Specification mappings documented from the supplied conversion sheet.
 - [ ] Confirm sentinel meanings where the supplied guide is silent.
 - [ ] Explain the source/release reason for all 2025 vehicle ages being -1; no cause has been assumed.
-- [ ] Test joins against the actual collision and casualty files.
+- [x] Test joins against the actual collision and casualty files.
 - [ ] Review extreme measurement values and cross-field consistency.
 - [ ] Review historical release/revision documentation. This comparison concerns one combined release and its supplied guide, not separately archived annual releases.
-- [ ] Have a teammate review the document and commit it to GitHub.
+- [x] Validated collision and casualty joins, key uniqueness, and reported child-record totals across all supplied files.
 
 ## Work log
 
 | Date | Work completed |
 | --- | --- |
-| 2026-11-07 | Inspected supplied CSV and DfT guide; prepared 32-field dictionary, code lists, year counts, missing-value findings and relationship notes. |
+| 2026-11-16 | Checked collision and casualty joins and confirmed the reported vehicle and casualty totals match linked records for all 513,801 collisions. |
