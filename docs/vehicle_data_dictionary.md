@@ -678,6 +678,15 @@ The guide lists `-1` without a label. The CSV has `-1` for every 2021, 2022 and 
 | `lsoa_of_driver` | 228,064 |
 | `driver_distance_banding` | 651,858 |
 
+### Measurement and cross-field checks
+
+- `age_of_driver` ranges from 1 to 105; 51 records have an age of 100 or above. These are unusual values to review, not confirmed errors.
+- The 573,978 non-missing `age_of_vehicle` values range from 0 to 123. There are 262 values above 50 and 6 above 100. All 2025 values are `-1`.
+- Six `engine_capacity_cc` values exceed 20,000; the maximum is 48,000. Review these against the source before treating them as errors.
+- `age_band_of_driver` matched `age_of_driver` in all complete records. No mismatches were found.
+- Historical and newer codes matched the supplied conversion guide in all comparable manoeuvre, journey-purpose and restricted-lane rows checked.
+- In 1,719 records, `vehicle_direction_from` or `vehicle_direction_to` is 0 while the other field has a different value, including 11 records where the other value is `-1`. The guide says both direction fields should be 0 for parked vehicles. Flag these for review; no values were changed.
+  
 ## Differences across years and specifications
 
 The supplied workbook says the historical versions were collected under the 2011 specification or earlier, while the newer versions were collected in or converted to the 2024 specification. Do not infer the original collection specification solely from collision year, and do not treat the two versions as independent events.
