@@ -35,7 +35,7 @@ The filename refers to 2025 but the code-list sheet is named `2024_code_list`. S
 - There are no duplicate vehicle (`collision_index`, `vehicle_reference`) or casualty (`collision_index`, `casualty_reference`) pairs, and no unmatched references.
 - For all 513,801 collisions, the reported vehicle and casualty totals match the linked rows.
 
-- ## Cross-dataset validation
+ ## Cross-dataset validation
 
 | Check | Result |
 | --- | --- |
@@ -757,7 +757,6 @@ The supplied workbook says the historical versions were collected under the 2011
 - [x] Specification mappings documented from the supplied conversion sheet.
 - [ ] Confirm sentinel meanings where the supplied guide is silent.
 - [ ] Explain the source/release reason for all 2025 vehicle ages being -1; no cause has been assumed.
-- [x] Test joins against the actual collision and casualty files.
 - [ ] Review extreme measurement values and cross-field consistency.
 - [ ] Review historical release/revision documentation. This comparison concerns one combined release and its supplied guide, not separately archived annual releases.
 - [x] Validated collision and casualty joins, key uniqueness, and reported child-record totals across all supplied files.
