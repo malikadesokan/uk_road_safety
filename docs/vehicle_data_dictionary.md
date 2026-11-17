@@ -153,14 +153,14 @@ Logical type: Integer category. Distinct observed values: 23. Empty cells: 0. Li
 | 97 | Motorcycle - unknown cc | cateogry introduced in 2011 specification | 2,988 |
 | 98 | Goods vehicle - unknown weight | cateogry introduced in 2011 specification | 3,920 |
 | 99 | Unknown vehicle type (self rep only) | cateogry introduced in 2011 specification | 617 |
-| 103 | Motorcycle - Scooter (1979-1998) | cateogory discontinued in 1999 specification | Not individually tabulated |
-| 104 | Motorcycle (1979-1998) | cateogory discontinued in 1999 specification | Not individually tabulated |
-| 105 | Motorcycle - Combination (1979-1998) | cateogory discontinued in 1999 specification | Not individually tabulated |
-| 106 | Motorcycle over 125cc (1999-2004) | cateogory discontinued in 2005 specification | Not individually tabulated |
-| 108 | Taxi (excluding private hire cars) (1979-2004) | cateogory discontinued in 2005 specification | Not individually tabulated |
-| 109 | Car (including private hire cars) (1979-2004) | cateogory discontinued in 2005 specification | Not individually tabulated |
-| 110 | Minibus/Motor caravan (1979-1998) | cateogory discontinued in 1999 specification | Not individually tabulated |
-| 113 | Goods over 3.5 tonnes (1979-1998) | cateogory discontinued in 1999 specification | Not individually tabulated |
+| 103 | Motorcycle - Scooter (1979-1998) | cateogory discontinued in 1999 specification | 0 (not observed in supplied 2021–2025 file) |
+| 104 | Motorcycle (1979-1998) | cateogory discontinued in 1999 specification | 0 (not observed in supplied 2021–2025 file) |
+| 105 | Motorcycle - Combination (1979-1998) | cateogory discontinued in 1999 specification | 0 (not observed in supplied 2021–2025 file) |
+| 106 | Motorcycle over 125cc (1999-2004) | cateogory discontinued in 2005 specification | 0 (not observed in supplied 2021–2025 file) |
+| 108 | Taxi (excluding private hire cars) (1979-2004) | cateogory discontinued in 2005 specification | 0 (not observed in supplied 2021–2025 file) |
+| 109 | Car (including private hire cars) (1979-2004) | cateogory discontinued in 2005 specification | 0 (not observed in supplied 2021–2025 file) |
+| 110 | Minibus/Motor caravan (1979-1998) | cateogory discontinued in 1999 specification | 0 (not observed in supplied 2021–2025 file) |
+| 113 | Goods over 3.5 tonnes (1979-1998) | cateogory discontinued in 1999 specification | 0 (not observed in supplied 2021–2025 file) |
 | -1 | Data missing or out of range |  | 661 |
 
 ### towing_and_articulation
@@ -295,7 +295,7 @@ Logical type: Integer category. Distinct observed values: 12. Empty cells: 0. Li
 | 7 | Entering lay-by or hard shoulder | data collected in the 2011 STATS19 specification (or earlier) | 418 |
 | 8 | Leaving lay-by or hard shoulder | data collected in the 2011 STATS19 specification (or earlier) | 780 |
 | 9 | Footway (pavement) | data collected in the 2011 STATS19 specification (or earlier) | 10,819 |
-| 10 | Not on carriageway | data collected in the 2011 STATS19 specification (or earlier) | Not individually tabulated |
+| 10 | Not on carriageway | data collected in the 2011 STATS19 specification (or earlier) | 0 (not observed in supplied 2021–2025 file) |
 | 99 | unknown (self reported) | data collected in the 2011 STATS19 specification (or earlier) | 62,505 |
 | -1 | Data missing or out of range | data collected in the 2011 STATS19 specification (or earlier) | 273,935 |
 
@@ -463,7 +463,7 @@ Logical type: Integer category. Distinct observed values: 7. Empty cells: 0. Lit
 | 4 | Pupil riding to/from school | data collected in the 2011 STATS19 specification (or earlier) | 2,491 |
 | 5 | Other | data collected in the 2011 STATS19 specification (or earlier) | 101,238 |
 | 6 | Not known | data collected in the 2011 STATS19 specification (or earlier) | 394,474 |
-| 15 | Other/Not known | 2005 specification only | Not individually tabulated |
+| 15 | Other/Not known | 2005 specification only | 0 (not observed in supplied 2021–2025 file) |
 | -1 | Data missing or out of range | data collected in the 2011 STATS19 specification (or earlier) | 270,786 |
 
 ### journey_purpose_of_driver
@@ -758,6 +758,14 @@ The supplied workbook says the historical versions were collected under the 2011
 | vehicle_location_restricted_lane_historic | 8 | Leaving lay-by or hard shoulder | vehicle_location_restricted_lane | 6 | Lay-by or hard shoulder |
 | vehicle_location_restricted_lane_historic | 9 | Footway (pavement) | vehicle_location_restricted_lane | 9 | Footway (pavement)  |
 | vehicle_location_restricted_lane_historic | 99 | Unknown (self rep only) | vehicle_location_restricted_lane | 99 | Unknown (self rep only) |
+### DfT release revision notes
+
+The DfT [road safety open data page](https://www.gov.uk/government/statistical-data-sets/road-safety-open-data) records two relevant revisions:
+
+- September 2026: vehicle-type coding was improved to identify powered personal transporters, including e-scooters, separately from the “other” category.
+- July 2026: 2024 `vehicle_location_restricted_lane` records incorrectly recoded as “no data” instead of “Lay-by or hard shoulder” were corrected where possible.
+
+The supplied combined CSV was not compared with an earlier downloaded copy, and its download date/version is not recorded here. These notices are release context; this document does not claim which individual rows changed.
 
 ## Review status and remaining checks
 
