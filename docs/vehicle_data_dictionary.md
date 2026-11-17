@@ -775,8 +775,8 @@ The supplied combined CSV was not compared with an earlier downloaded copy, and 
 - [x] Specification mappings documented from the supplied conversion sheet.
 - [ ] Confirm sentinel meanings where the supplied guide is silent.
 - [ ] Explain the source/release reason for all 2025 vehicle ages being -1; no cause has been assumed.
-- [ ] Review extreme measurement values and cross-field consistency.
-- [ ] Review historical release/revision documentation. This comparison concerns one combined release and its supplied guide, not separately archived annual releases.
+- [x] Reviewed extreme measurement values and cross-field consistency; findings and unconfirmed anomalies are documented above.
+- [x] Reviewed DfT release and revision notes. This document covers one combined release and its supplied guide, not separately archived annual releases.
 - [x] Validated collision and casualty joins, key uniqueness, and reported child-record totals across all supplied files.
 
 ## Work log
