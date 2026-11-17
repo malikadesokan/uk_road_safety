@@ -565,6 +565,7 @@ Age of vehicle in years; interpretation of sentinel values requires further guid
 Logical type: Integer measurement. Distinct observed values: 99. Empty cells: 0. Literal `-1` count: 363,287.
 
 The guide supplies no explicit sentinel definition for this field. `-1` is observed and should be excluded from age calculations pending confirmation. Every 2025 value is `-1`; do not calculate a 2025 average vehicle age from this file. Non-negative observed ages extend to 123 years; investigate extreme values before analysis, without assuming they are errors.
+The DfT [2024 STATS20 instructions](https://assets.publishing.service.gov.uk/media/6925a35433d088f6d5da2cf0/STATS20_2024_specification.pdf) do not list `age_of_vehicle`. All 2025 records in this file contain `-1`. This is consistent with the field no longer being collected under the 2024 specification, but the DfT sources reviewed do not directly confirm that this caused the 2025 values. Treat it as a possible explanation pending confirmation. DfT discusses the transition between specifications in its [transition report](https://www.gov.uk/government/publications/stats19-collection-and-use-impacts-of-the-2024-specification/stats19-collection-and-use-initial-impacts-of-transition-to-the-2024-specification).
 
 ### generic_make_model
 
