@@ -13,47 +13,76 @@ models:
         columns: [casualty_reference]
 
     columns:
-      - name: casualty_class_cas_lookup_table
-        description: Casualty class values
+      - name: collision_index
+        description: Collision index
 
-      - name: sex_of_casualty_cas_lookup_table
-        description: Sex of casualty values
+      - name: collision_year
+        description: Collision Year
 
-      - name: age_band_of_casualty_cas_lookup_table
-        description: Age band of casualty values
+      - name: collision_ref_no
+        description: Collision Ref Number
 
-      - name: casualty_severity_cas_lookup_table
-        description: Casualty severity values
+      - name: vehicle_ref
+        description: Vehicle Reference Number
 
-      - name: enhanced_casualty_severity_cas_lookup_table
-        description: Enhanced casualty severity values
+      - name: casualty_ref
+        description: Casualty Reference
 
-      - name: pedestrian_location_cas_lookup_table
-        description: Pedestrian location values
+      - name: casualty_class
+        description: Casualty class 
 
-      - name: pedestrian_movement_cas_lookup_table
-        description: Pedestrian movement values
+      - name: gender
+        description: Sex of casualty 
 
-      - name: car_passenger_cas_lookup_table
-        description: Car passenger values
+      - name: age
+        description: Age of casualty 
 
-      - name: bus_or_coach_passenger_cas_lookup_table
-        description: Bus or coach passenger values
+      - name: age_band
+        description: Age band of casualty 
 
-      - name: pedestrian_road_maintenance_worker_cas_lookup_table
-        description: Pedestrian road maintenance worker values
+      - name: casualty_severity
+        description: Casualty severity 
 
-      - name: casualty_type_cas_lookup_table
-        description: Casualty type values
+      - name: enhanced_casualty_severity
+        description: Enhanced casualty severity 
 
-      - name: casualty_imd_decile_cas_lookup_table
-        description: Casualty imd decile values
+      - name: pedestrian_location
+        description: Pedestrian location 
 
-      - name: casualty_injury_based_cas_lookup_table
-        description: Casualty injury based values
+      - name: pedestrian_movement
+        description: Pedestrian movement 
 
-      - name: casualty_distance_banding_cas_lookup_table
-        description: Casualty distance banding values
+      - name: car_passenger
+        description: Car passenger 
 
-      - name: escooter_flag_cas_lookup_table
-        description: Escooter flag values
+      - name: bus_coach_passenger
+        description: Bus or coach passenger 
+
+      - name: maintenance_worker
+        description: Pedestrian road maintenance worker 
+
+      - name: casualty_type
+        description: Casualty type 
+
+      - name: lsoa_of_casualty
+        description: Casualty lsoa
+
+      - name: casualty_imd_decile
+        description: Casualty imd decile 
+
+      - name: casualty_injury_based
+        description: Casualty injury based 
+
+      - name: casualty_adjusted_severity_serious
+        description: Casualty Adjusted Severity Serious
+
+      - name: casualty_adjusted_severity_slight
+        description: Casualty Adjusted Severity Slight
+
+      - name: casualty_distance_banding
+        description: Casualty distance banding 
+
+      - name: escooter_flag
+        description: Escooter flag 
+
+
