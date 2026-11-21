@@ -1,0 +1,11 @@
+uk_road_safety_platform:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      threads: 16
+      database: uk-road-safety-data-platform
+      dataset: staging_layer
+      method: oauth
+      location: europe-west2
+      dataproc_batch: null

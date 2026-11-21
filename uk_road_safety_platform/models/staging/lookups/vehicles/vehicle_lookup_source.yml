@@ -1,0 +1,129 @@
+sources:
+  - name: DfT_vehicle_lookup
+    database: uk-road-safety-data-platform
+    description: DfT vehicle lookup data
+    dataset: landing_layer
+    config:
+      enabled: true
+      meta:
+        owner: 
+      freshness:
+        warn_after:
+          count: 2
+          period: day
+
+    tables:
+      - name: vehicle_type_veh_lookup_table
+        description: Vehicle type values
+        config:
+          enabled: true
+
+      - name: towing_and_articulation_veh_lookup_table
+        description: Towing and articulation values
+        config:
+          enabled: true
+
+      - name: vehicle_manoeuvre_historic_veh_lookup_table
+        description: Vehicle manoeuvre historic values
+        config:
+          enabled: true
+
+      - name: vehicle_manoeuvre_veh_lookup_table
+        description: Vehicle manoeuvre values
+        config:
+          enabled: true
+
+      - name: vehicle_direction_from_veh_lookup_table
+        description: Vehicle direction from values
+        config:
+          enabled: true
+
+      - name: vehicle_direction_to_veh_lookup_table
+        description: Vehicle direction to values
+        config:
+          enabled: true
+
+      - name: vehicle_location_restricted_lane_historic_veh_lookup_table
+        description: Vehicle location restricted lane historic values
+        config:
+          enabled: true
+
+      - name: vehicle_location_restricted_lane_veh_lookup_table
+        description: Vehicle location restricted lane values
+        config:
+          enabled: true
+
+      - name: junction_location_veh_lookup_table
+        description: Junction location values
+        config:
+          enabled: true
+
+      - name: skidding_and_overturning_veh_lookup_table
+        description: Skidding and overturning values
+        config:
+          enabled: true
+
+      - name: hit_object_in_carriageway_veh_lookup_table
+        description: Hit object in carriageway values
+        config:
+          enabled: true
+
+      - name: vehicle_leaving_carriageway_veh_lookup_table
+        description: Vehicle leaving carriageway values
+        config:
+          enabled: true
+
+      - name: hit_object_off_carriageway_veh_lookup_table
+        description: Hit object off carriageway values
+        config:
+          enabled: true
+
+      - name: first_point_of_impact_veh_lookup_table
+        description: First point of impact values
+        config:
+          enabled: true
+
+      - name: vehicle_left_hand_drive_veh_lookup_table
+        description: Vehicle left hand drive values
+        config:
+          enabled: true
+
+      - name: journey_purpose_of_driver_historic_veh_lookup_table
+        description: Journey purpose of driver historic values
+        config:
+          enabled: true
+
+      - name: journey_purpose_of_driver_veh_lookup_table
+        description: Journey purpose of driver values
+        config:
+          enabled: true
+
+      - name: sex_of_driver_veh_lookup_table
+        description: Sex of driver values
+        config:
+          enabled: true
+
+      - name: age_band_of_driver_veh_lookup_table
+        description: Age band of driver values
+        config:
+          enabled: true
+
+      - name: propulsion_code_veh_lookup_table
+        description: Propulsion code values
+        config:
+          enabled: true
+
+      - name: driver_imd_decile_veh_lookup_table
+        description: Driver imd decile values
+        config:
+          enabled: true
+
+      - name: escooter_flag_veh_lookup_table
+        description: Escooter flag values
+        config:
+          enabled: true
+
+      - name: driver_distance_banding_veh_lookup_table
+        description: Driver distance banding values
+        config:
+          enabled: true

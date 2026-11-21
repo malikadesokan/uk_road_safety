@@ -1,5 +1,5 @@
 import pandas as pd
-from clean_dict import dictionaries_col, dictionaries_casualty
+from clean_dict import dictionaries_col, dictionaries_casualty, vehicle_dictionaries
 import config
 
 collision_lookup_tables = {}
@@ -34,7 +34,7 @@ def extract_collision_lookup_tables():
     print(f"{col_len} tables extracted! Happy days 👌")
 
 if __name__ == "__main__":
-        extract_collision_lookup_tables()
+    extract_collision_lookup_tables()
 
 def extract_casualty_lookup_tables():
     """
@@ -64,7 +64,7 @@ def extract_casualty_lookup_tables():
     print(f"{cas_len} tables extracted! Happy days 👌")
 
 if __name__ == "__main__":
-        extract_casualty_lookup_tables()
+    extract_casualty_lookup_tables()
 
 def extract_vehicle_lookup_tables():
     """
@@ -77,7 +77,7 @@ def extract_vehicle_lookup_tables():
     The resulting lookup tables are stored in a dictionary and
     exported individually as CSV files
     """
-    for vehicle, vehicle_tables in dictionaries_casualty.items():
+    for vehicle, vehicle_tables in vehicle_dictionaries.items():
         print(f"Extracting {vehicle} lookup tables")
         df = pd.DataFrame(
             vehicle_tables.items(),
@@ -94,4 +94,4 @@ def extract_vehicle_lookup_tables():
     print(f"{veh_len} tables extracted! Happy days 👌")
 
 if __name__ == "__main__":
-        extract_vehicle_lookup_tables()
+    extract_vehicle_lookup_tables()

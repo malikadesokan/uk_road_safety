@@ -1,8 +1,9 @@
-#duckdb
 pandas
 pyarrow
 requests
 python-dotenv
 pytest
-dbt-core
-dbt-duckdb
+dbt
+google-cloud-storage
+google-cloud-bigquery
+apache-airflow-providers-google==22.2.2

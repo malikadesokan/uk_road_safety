@@ -1,0 +1,59 @@
+version: 2
+models:
+  - name: stg_casualty
+    description: Cleaned DfT casualty data
+    config:
+      persist_docs:
+        relation: true
+        columns: true
+    constraints:
+      - type: primary_key
+        columns: [casualty_reference]
+      - type: not_null
+        columns: [casualty_reference]
+
+    columns:
+      - name: casualty_class_cas_lookup_table
+        description: Casualty class values
+
+      - name: sex_of_casualty_cas_lookup_table
+        description: Sex of casualty values
+
+      - name: age_band_of_casualty_cas_lookup_table
+        description: Age band of casualty values
+
+      - name: casualty_severity_cas_lookup_table
+        description: Casualty severity values
+
+      - name: enhanced_casualty_severity_cas_lookup_table
+        description: Enhanced casualty severity values
+
+      - name: pedestrian_location_cas_lookup_table
+        description: Pedestrian location values
+
+      - name: pedestrian_movement_cas_lookup_table
+        description: Pedestrian movement values
+
+      - name: car_passenger_cas_lookup_table
+        description: Car passenger values
+
+      - name: bus_or_coach_passenger_cas_lookup_table
+        description: Bus or coach passenger values
+
+      - name: pedestrian_road_maintenance_worker_cas_lookup_table
+        description: Pedestrian road maintenance worker values
+
+      - name: casualty_type_cas_lookup_table
+        description: Casualty type values
+
+      - name: casualty_imd_decile_cas_lookup_table
+        description: Casualty imd decile values
+
+      - name: casualty_injury_based_cas_lookup_table
+        description: Casualty injury based values
+
+      - name: casualty_distance_banding_cas_lookup_table
+        description: Casualty distance banding values
+
+      - name: escooter_flag_cas_lookup_table
+        description: Escooter flag values

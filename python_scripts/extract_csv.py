@@ -32,9 +32,9 @@ if __name__ == "__main__":
 def extract_casualties_data():
         print("Extracting casualties data")
         df = pd.read_csv(config.CAUSALTIES)
-        df.to_csv(f"{config.DATA_PATH}/casulties_data.csv", index=False)
+        df.to_csv(f"{config.DATA_PATH}/casualties_data.csv", index=False)
         df_count = len(df)
-        print(f"{df_count} casulties data successfully extracted")
+        print(f"{df_count} casualties data successfully extracted")
 
 if __name__ == "__main__":
         extract_casualties_data()

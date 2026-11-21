@@ -1,0 +1,31 @@
+sources:
+  - name: DfT
+    database: uk-road-safety-data-platform
+    description: DfT collision, vehicle and casualty data
+    dataset: landing_layer
+    config:
+      enabled: true
+      meta:
+        owner: 
+      freshness:
+        warn_after:
+          count: 2
+          period: day
+
+    tables:
+      - name: collision_data
+        description: collision data from DfT
+        config:
+          enabled: true
+          # event_time: campaign_updated_at
+
+      - name: casualties_data
+        description: casualty data from DfT
+        config:
+          enabled: true
+
+      - name: vehicles_data
+        description: vehicles data from DfT
+        config:
+          enabled: true
+     

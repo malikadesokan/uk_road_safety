@@ -1,0 +1,150 @@
+sources:
+  - name: DfT_collision_lookup
+    database: uk-road-safety-data-platform
+    description: DfT collision lookup data
+    dataset: landing_layer
+    config:
+      enabled: true
+      meta:
+        owner: 
+      freshness:
+        warn_after:
+          count: 2
+          period: day
+
+    tables:
+      - name: police_force_col_lookup_table
+        description: Police force values
+        config:
+          enabled: true
+
+      - name: collision_severity_col_lookup_table
+        description: Collision severity values
+        config:
+          enabled: true
+
+      - name: day_of_the_week_col_lookup_table
+        description: Day of the week values
+        config:
+          enabled: true
+
+      - name: local_authority_district_col_lookup_table
+        description: Local authority district values
+        config:
+          enabled: true
+
+      - name: local_authority_ons_district_col_lookup_table
+        description: Local authority ons district values
+        config:
+          enabled: true
+
+      - name: first_road_class_col_lookup_table
+        description: First road class values
+        config:
+          enabled: true
+
+      - name: road_type_col_lookup_table
+        description: Road type values
+        config:
+          enabled: true
+
+      - name: junction_detail_col_lookup_table
+        description: Junction detail values
+        config:
+          enabled: true
+
+      - name: junction_detail_historic_col_lookup_table
+        description: Junction detail historic values
+        config:
+          enabled: true
+
+      - name: junction_control_col_lookup_table
+        description: Junction control values
+        config:
+          enabled: true
+
+      - name: second_road_class_col_lookup_table
+        description: Second road class values
+        config:
+          enabled: true
+
+      - name: pedestrian_crossing_col_lookup_table
+        description: Pedestrian crossing values
+        config:
+          enabled: true
+
+      - name: pedestrian_crossing_human_control_historic_col_lookup_table
+        description: Pedestrian crossing human control historic values
+        config:
+          enabled: true
+
+      - name: pedestrian_crossing_physical_facilities_historic_col_lookup_table
+        description: Pedestrian crossing physical facilities historic values
+        config:
+          enabled: true
+
+      - name: light_conditions_col_lookup_table
+        description: Light conditions values
+        config:
+          enabled: true
+
+      - name: weather_conditions_col_lookup_table
+        description: Weather conditions values
+        config:
+          enabled: true
+
+      - name: road_surface_conditions_col_lookup_table
+        description: Road surface conditions values
+        config:
+          enabled: true
+
+      - name: special_condition_at_site_col_lookup_table
+        description: Special condition at site values
+        config:
+          enabled: true
+
+      - name: carriage_hazards_historic_col_lookup_table
+        description: Carriage hazards historic values
+        config:
+          enabled: true
+
+      - name: carriage_hazards_col_lookup_table
+        description: Carriage hazards values
+        config:
+          enabled: true
+
+      - name: urban_or_rural_area_col_lookup_table
+        description: Urban or rural area values
+        config:
+          enabled: true
+
+      - name: did_police_officer_attend_scene_of_accident_col_lookup_table
+        description: Did police officer attend scene of accident values
+        config:
+          enabled: true
+
+      - name: did_police_officer_attend_scene_of_collision_col_lookup_table
+        description: Did police officer attend scene of collision values
+        config:
+          enabled: true
+
+      - name: trunk_road_flag_col_lookup_table
+        description: Trunk road flag values
+        config:
+          enabled: true
+
+      - name: enhanced_collision_severity_col_lookup_table
+        description: Enhanced collision severity values
+        config:
+          enabled: true
+
+      - name: collision_injury_based_col_lookup_table
+        description: Collision injury based values
+        config:
+          enabled: true
+
+      - name: collision_adjusted_severity_serious_col_lookup_table
+        description: Collision adjusted severity serious values
+        config:
+          enabled: true
+

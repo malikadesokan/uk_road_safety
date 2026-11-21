@@ -1,0 +1,146 @@
+version: 2
+models:
+  - name: stg_collision
+    description: Cleaned DfT collision data
+    config:
+      persist_docs:
+        relation: true
+        columns: true
+    constraints:
+      - type: primary_key
+        columns: [collision_index]
+      - type: not_null
+        columns: [collision_index]
+
+    columns:
+      - name: collision_index
+        description: The unique identifier assigned to the collision
+
+      - name: collision_year
+        description: Year of the collision
+
+      - name: collision_ref_no
+        description: Reference used to identify the collision within the reporting system
+
+      - name: location_easting_osgr
+        description: Easting coordinate representing the collision's location using the British National Grid
+
+      - name: location_northing_osgr
+        description: Northing coordinate representing the collision's location using the British National Grid
+
+      - name: longitude
+        description: Geographic longitude of the collision location
+
+      - name: latitude
+        description: Geographic latitude of the collision location
+
+      - name: police_force
+        description: Police force responsible for recording the collision
+
+      - name: collision_severity
+        description: Collision severity classification
+
+      - name: no_of_vehicles
+        description: Total number of vehicles involved in the collision
+        
+      - name: no_of_casualties
+        description: Total number of casualties resulting from the collision
+
+      - name: collision_date
+        description: Date of the collision
+
+      - name: weekday
+        description: Day of the week the collision occured
+
+      - name: collision_time
+        description: Time at which the collision occured, usually recorded in 24-hours format
+
+      - name: local_authority_district
+        description: Code identifying the local authority district in which the collision occured
+
+      - name: local_authority_ons_district
+        description: Office for National Statistics (ONS) code identifying the local authority district.
+
+      - name: local_authority_highway
+        description: Code identifying the local highway authority responsible for the road where the collision occurred.
+
+      - name: local_authority_highway_current
+        description: Current local highway authority classification or code for the collision location, accounting for authority changes.
+
+      - name: first_road_class
+        description: Classification of the first road involved, such as motorway, A road, B road or unclassified road.
+
+      - name: first_road_number
+        description: Number identifying the first road, where applicable.
+
+      - name: road_type
+        description: Describes the type of road at the collision location, such as roundabout, one-way street or dual carriageway.
+
+      - name: speed_limit
+        description: "Posted speed limit on the road where the collision occurred, recorded in miles per hour."
+
+      - name: junction_detail_historic
+        description: Historical classification describing the type of junction or road layout associated with the collision.
+
+      - name: junction_detail
+        description: Classification describing the junction or road layout associated with the collision.
+
+      - name: junction_control
+        description: Type of traffic control operating at the junction, such as traffic signals, stop sign or give-way sign.
+
+      - name: second_road_class
+        description: Classification of the second road involved in the collision, where applicable.
+
+      - name: second_road_number
+        description: Number identifying the second road, where applicable.
+
+      - name: pedestrian_crossing_human_control_historic
+        description: Historical classification of human-controlled pedestrian crossing facilities, such as school crossing patrols or police control.
+
+      - name: pedestrian_crossing_physical_facilities_historic
+        description: Historical classification of physical pedestrian crossing facilities, such as zebra or pelican crossings.
+
+      - name: pedestrian_crossing
+        description: Classification of pedestrian crossing facilities present at or near the collision location.
+
+      - name: light_conditions
+        description: Lighting conditions at the time of the collision, such as daylight, darkness with street lighting or darkness without street lighting.
+
+      - name: weather_conditions
+        description: Weather conditions at the time of the collision, such as fine weather, rain, snow or fog.
+
+      - name: road_surface_conditions
+        description: Condition of the road surface at the time of the collision, such as dry, wet, icy or snowy.
+
+      - name: special_conditions_at_site
+        description: Special conditions at the collision location, such as roadworks or temporary traffic controls.
+
+      - name: carriageway_hazards_historic
+        description: Historical classification of hazards affecting the carriageway, such as objects in the road or previous accidents.
+
+      - name: carriageway_hazards
+        description: Classification of hazards affecting the carriageway at the time of the collision.
+
+      - name: urban_or_rural_area
+        description: Indicates whether the collision occurred in an urban or rural area.
+
+      - name: did_police_officer_attend_scene_of_accident
+        description: Indicates whether a police officer attended the collision scene.
+
+      - name: trunk_road_flag
+        description: Indicates whether the road is classified as a trunk road, generally forming part of the strategic road network.
+
+      - name: lsoa_of_accident_location
+        description: Lower Layer Super Output Area (LSOA) code identifying the small geographical area where the collision occurred.
+
+      - name: enhanced_severity_collision
+        description: Indicator relating to the enhanced severity classification of the collision.
+
+      - name: collision_injury_based
+        description: Collision severity classification based on injury information.
+
+      - name: collision_adjusted_severity_serious
+        description: Adjusted serious collision severity measure, reflecting the Department for Transport's adjusted severity methodology.
+
+      - name: collision_adjusted_severity_slight
+        description: Adjusted slight collision severity measure, reflecting the Department for Transport's adjusted severity methodology.
