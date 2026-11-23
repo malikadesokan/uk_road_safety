@@ -24,7 +24,7 @@ sources:
         config:
           enabled: true
 
-      - name: vehicles_data
+      - name: vehicle_data
         description: vehicles data from DfT
         config:
           enabled: true

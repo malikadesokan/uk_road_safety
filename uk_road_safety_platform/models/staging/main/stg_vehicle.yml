@@ -1,0 +1,111 @@
+version: 2
+models:
+  - name: stg_vehicle
+    description: Cleaned DfT vehicle data
+    config:
+      persist_docs:
+        relation: true
+        columns: true
+    constraints:
+      - type: primary_key
+        columns: [casualty_reference]
+      - type: not_null
+        columns: [casualty_reference]
+
+    columns:
+      - name: collision_index
+        description: Collision index
+
+      - name: collision_year
+        description: Collision Year
+
+      - name: collision_ref_no
+        description: Collision Ref Number
+
+      - name: vehicle_ref_no
+        description: Vehicle Reference Number
+
+      - name: vehicle_type
+        description: Vehicle type 
+
+      - name: tow_and_articulation
+        description: Towing and articulation 
+
+      - name: historic_vehicle_manoeuvre
+        description: Vehicle manoeuvre historic 
+
+      - name: vehicle_manoeuvre
+        description: Vehicle manoeuvre 
+
+      - name: direction_from
+        description: Vehicle direction from 
+
+      - name: direction_to
+        description: Vehicle direction to 
+
+      - name: historic_vehicle_location_restricted_lane
+        description: Vehicle location restricted lane historic 
+
+      - name: vehicle_location_restricted_lane
+        description: Vehicle location restricted lane 
+
+      - name: junction_location
+        description: Junction location 
+
+      - name: skidding_overturning
+        description: Skidding and overturning 
+
+      - name: hit_object_in_carriageway
+        description: Hit object in carriageway 
+
+      - name: vehicle_leaving_carriageway
+        description: Vehicle leaving carriageway 
+
+      - name: hit_object_off_carriageway
+        description: Hit object off carriageway 
+
+      - name: first_point_of_impact
+        description: First point of impact 
+
+      - name: left_hand_vehicle
+        description: Vehicle left hand drive 
+
+      - name: historic_journey_purpose
+        description: Journey purpose of driver historic 
+
+      - name: journey_purpose
+        description: Journey purpose of driver 
+
+      - name: driver_gender
+        description: Sex of driver 
+
+      - name: driver_age
+        description: Age of driver 
+
+      - name: driver_age_band
+        description: Age band of driver 
+
+      - name: engine_capacity
+        description: Vehicle Engine Capacity 
+
+      - name: propulsion_code
+        description: Propulsion code 
+
+      - name: vehicle_age
+        description: Age of vehicle 
+
+      - name: driver_imd_decile
+        description: Driver imd decile 
+
+      - name: vehicle_model
+        description: Vehicle make and model
+
+      - name: driver_lsoa
+        description: Driver Lsoa
+
+
+      - name: escooter_flag
+        description: Escooter flag 
+
+      - name: distance_banding
+        description: Driver distance banding 
