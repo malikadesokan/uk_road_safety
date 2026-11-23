@@ -25,6 +25,13 @@ The intended outcome is an automated and well documented data platform supported
 ### Project Development
 This repository will evolve as the project progresses. Further documentations will be added to explain the architecture, technologies, data sources, pipeline processes, data models and analytical outputs.
 
-### Collaboators
-- Abdulmalik Adesokan - Data Engineer
-- Henry Chiegbu - BI Developer
+![tentative architecture](/images/UK%20Road%20Safety%20Data%20Pipeline%20Architecture.png)
+*tentative pipeline architecture
+
+## Collaboators
+### Engineering Team
+- Abdulmalik Adesokan
+- James Adeshina
+
+### BI Development Team
+- Henry Chiegbu

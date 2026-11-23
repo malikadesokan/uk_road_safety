@@ -17,6 +17,7 @@ python_scripts/loop.py
 /uk_road_safety_platform/.vscode/
 /uk_road_safety_platform/.user.yml
 /terraform/*.tfstate.backup
+/terraform/iam.tf
 python_scripts/create_*.py
 python_scripts/collision_to_bq.py
 avoid-manual-tasks

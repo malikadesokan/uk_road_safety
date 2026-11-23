@@ -16,6 +16,8 @@ data "google_project" "project" {}
 
 #    Google storage account
 
+##
+
 ##  create bucket
 
 resource "google_storage_bucket" "uk_road_safety" {
